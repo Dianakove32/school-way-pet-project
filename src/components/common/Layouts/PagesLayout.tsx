@@ -55,13 +55,16 @@ const PageLayout = ({children, title, className}: any) => {
         left:55px;
         }
         .diary-layout{
-         background: linear-gradient(170.91deg, #EBE4FF 3.34%, #FFF2EE 37.13%, #FFFFFF 104.14%);
+         background: linear-gradient(170.91deg, #EBE4FF 3.34%, #FFF2EE 37.13%, #FFFFFF 104.14%); 
+         height: 100vh;
         }
         .diaryScore{
-        background: linear-gradient(10.25deg, #D9CCFF 8.59%, #FFF1ED 62.03%, #FFFFFF 79.64%);
+        background: linear-gradient(10.25deg, #D9CCFF 8.59%, #FFF1ED 62.03%, #FFFFFF 79.64%); 
+        height: 100vh;
         }
         .diarySchedule{
-        background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%) 
+        background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%) ;
+        height: 100vh;
         }
         .diaryScore section{
         padding-left: 0px;
@@ -69,8 +72,9 @@ const PageLayout = ({children, title, className}: any) => {
         }
         .calendar-layout{
         background: linear-gradient(170.91deg, #EBE4FF 3.34%, #FFF2EE 37.13%, #FFFFFF 104.14%);
+        height: 100vh;
         }
-         .calendar-layout section{
+        .calendar-layout section{
         padding-left: 0px;
         padding-right: 0px;
         }

@@ -14,7 +14,7 @@ const Rings = () => {
 
   return (
     <>
-    <PageLayout title={'Дневник'} >
+    <PageLayout title={'Дневник'} className={"diarySchedule"}>
       <Breadcrumbs title={'Расписание звонков'} link={'/diary'}/>
       <div className='tabsWrap'>
         <Tabs

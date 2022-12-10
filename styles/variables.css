@@ -1,0 +1,20 @@
+:root {
+    /* colors */
+    --color-primary: #48586A;
+    --color-secondary: #696F75;
+    --color-hint: #696F75;
+    --color-contrast: #FDFDFD;
+    --color-main: #A18CF3;
+    --color-light: #EEEAFF;
+    --color-neutrals: #FDFDFD;
+    --color-accent1: #FB6DFF;
+    --color-accent2: #62E5D7;
+    --color-accent3: #72B8FF;
+   --color-accent4: #FEC32A;
+
+
+    /*  */
+    --box-shadow: 0 4px 16px rgba(0 0 0 / 0.25);
+    --box-shadow-light: 0 4px 4px rgba(0 0 0 / 0.25);
+
+}

@@ -93,6 +93,27 @@ const Tabs = ({ options, onClick, defaultValue = options[0].value, value, classN
       cursor: pointer;
       margin: 0;
       }
+      .books{
+      display:flex;
+      justify-content: space-between;
+      width: 100%;
+      overflow: auto;
+      }
+      .books-tab-item{
+      padding: 13px 16px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px; 
+      color: #48586A;
+      background: #FFFFFF;
+      border-radius: 24px;
+      cursor: pointer;
+      } 
+      .books-active{
+      background: linear-gradient(0deg, #FEC32A 19.35%, #FFFBF1 151%);
+      box-shadow: 0px 6px 17px rgba(67, 49, 136, 0.12);
+      border-radius: 32px;
+      }  
 `}</style>
   </div>
 }
