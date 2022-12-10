@@ -1,0 +1,110 @@
+.container{
+    height: 500px;
+    overflow-y: auto;
+}
+.scheduleItem{
+    background: #FFFFFF;
+    border-radius: 32px;
+    margin-bottom: 12px;
+    padding:29px ;
+}
+.scheduleItemColored{
+    border-radius: 32px;
+    margin-bottom: 12px;
+    padding:29px;
+    background: #EEEAFF;
+}
+.border{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px ;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.scheduleSubject{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+.scheduleData{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #696F75;
+}
+.scheduleTeacher{
+    color: #696F75;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.scheduleClass{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #696F75;
+}
+.task{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #696F75;
+}
+.calendarDetailItem{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.calendarContainer{
+    height: 200px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border-radius: 32px;
+    margin-bottom: 12px;
+    padding:29px ;
+}
+.calendarDetailItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0px;
+}
+.calendarTime{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #48586A;
+}
+.calendarComment{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background: linear-gradient(352.77deg, #FEC32A -10.65%, #FFF9E9 173.27%);
+    border-radius: 24px;
+    padding: 16px;
+    width: 200px;
+    max-height: 68px;
+    overflow-y: auto;
+}
+.calendarCommentBlue{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border-radius: 24px;
+    padding: 16px;
+    width: 260px;
+    background: linear-gradient(328.01deg, #72B8FF 18.3%, #FDFDFD 151.56%);
+    max-height: 68px;
+    overflow-y: auto;
+}
+.calendarCommentGreen{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border-radius: 24px;
+    padding: 16px;
+    width: 260px;
+    background: linear-gradient(328.01deg, #72ffef 18.3%, #FDFDFD 151.56%);
+    max-height: 68px;
+    overflow-y: auto;
+}

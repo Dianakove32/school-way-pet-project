@@ -1,0 +1,185 @@
+.wrapper {
+    /*width: 245px;*/
+    /*box-shadow: 0 4px 16px rgba(0 0 0 / 0.25);*/
+    /*background-color: var(--color-white);*/
+    /*border-radius: 16px;*/
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    min-height: 250px;
+}
+.wrapperWeek{
+    margin : 20px 0px;
+}
+
+.btn {
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #FDC22A;
+}
+
+.btn:hover {
+    color: #f3b606;
+}
+.btnCont{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.btn:active {
+    color: #FBFBFB;
+    background: radial-gradient(110% 110% at 80% 77.5%, #FEC32A 25.83%, rgba(254, 195, 42, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    filter: drop-shadow(0px 4px 10px rgba(114, 110, 100, 0.2));
+}
+
+/*.btnIco {*/
+/*    height: 1em;*/
+/*    width: 1em;*/
+/*}*/
+
+.heed {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.headMode {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #7e7d7d;
+}
+
+.headModeSelect {
+    cursor: pointer;
+    border: none;
+}
+
+/*.headModeSelect:hover {*/
+/*    !*color: var(--color-accent);*!*/
+/*}*/
+
+.body {
+    display: grid;
+}
+
+.modeDays {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 21px;
+}
+
+.modeMonths {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calendarWeekDay {
+    color: #48586A66;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    margin-bottom: 7px;
+
+}
+
+.calendarBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #A9A9A9;
+    cursor: pointer;
+}
+.calendarBtnCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 12px;
+    align-items: center;
+    height: 30px;
+    margin : 20px 0px 40px 0px;
+
+}
+.headModeCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headModeCont div{
+    margin: 0px 10px;
+}
+/*.modeDays .calendarBtn {*/
+/*    border-radius: 4px;*/
+/*    height: 25px;*/
+/*    width: 25px;*/
+/*}*/
+
+/*.modeMonths .calendarBtn {*/
+/*    border-radius: 6px;*/
+/*    height: 47.5px;*/
+/*    width: 47.5px;*/
+/*}*/
+
+/*.calendarBtn:not(.dayAdditional):hover,*/
+/*.calendarBtn:not(.dayAdditional):focus-visible {*/
+/*    outline: none;*/
+/*    !*border-color: var(--color-accent);*!*/
+/*    border-color: red;*/
+/*}*/
+
+.calendarBtn:not(.dayAdditional):active,
+.calendarBtn:not(.dayAdditional).active {
+    color: #FFFFFF;
+    background: radial-gradient(110% 110% at 80% 77.5%, #FEC32A 25.83%, rgba(254, 195, 42, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    filter: drop-shadow(0px 4px 10px rgba(114, 110, 100, 0.2));
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dayAdditional {
+    color: #f1eaea;;
+    cursor: default;
+    /*visibility: hidden;*/
+}
+
+.today {
+    color: #FFFFFF;
+    background: radial-gradient(110% 110% at 80% 77.5%, #FEC32A 25.83%, rgba(254, 195, 42, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    filter: drop-shadow(0px 4px 10px rgba(114, 110, 100, 0.2));
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/*.time {*/
+/*    margin-top: 3px;*/
+/*    background: #FFFFFF;*/
+/*    border-radius: 8px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.time div input {*/
+/*    width: 24px;*/
+/*    padding: 3px 0;*/
+/*    font-size: 13px;*/
+/*}*/

@@ -1,0 +1,386 @@
+.section {
+    margin-bottom: 50px;
+    margin-right: var(--gap);
+}
+
+.wrapper {
+    margin-top: 34px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    display: grid;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: -14px;
+    left: -18px;
+    right: -18px;
+    bottom: 14px;
+    background-color: var(--color-accent);
+    border-radius: 27px;
+    opacity: 0.6;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.selectMonth {
+    /* margin-left: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.button:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.scrollWrap {
+    padding: 0 20px;
+    margin: 0 -20px;
+    overflow: auto;
+    height: 400px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    min-width: 900px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(7, calc(100% / 7 - (60px / 7)));
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+    padding-bottom: 10px;
+}
+
+.headerDay {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.today {
+    background-color: var(--color-yellow);
+}
+
+.dayAdditional {
+    background-color: rgba(var(--color-accent_rgb), 0.8);
+}
+
+.headerBtn {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -15px;
+}
+
+.headerBtn:last-child {
+    left: auto;
+    right: -15px;
+}
+
+.body {
+    min-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(7, calc(100% / 7 - (60px / 7)));
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.col {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    padding: 8px 5px;
+    background-color: var(--color-blue-gray);
+    border-radius: 16px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+.red {
+    background-color: var(--color-accent-first);
+    color: var(--color-white);
+}
+
+.taskHead {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.taskTitle {
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.edit .taskTitle {
+    max-width: calc(100% - 24px);
+}
+
+.btnEdit {
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.btnEdit:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.btnEdit:active {
+    box-shadow: var(--box-shadow-active);
+}
+
+.task:not(:hover) .btnEdit {
+    opacity: 0;
+}
+
+.task .btnEdit:focus-visible {
+    opacity: 1;
+}
+
+.icoEdit {
+    width: 18px;
+    height: 18px;
+}
+
+.taskBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    word-wrap: break-word;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.time {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.search {
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.addLesson {
+    width: 100%;
+}
+.but_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 0px;
+}
+.but_wrap div {
+    height: 56px;
+    background: var(--color-yellow);
+    width: 32%;
+}
+.but_wrap div div {
+    background: var(--color-white);
+}
+.but_wrap button {
+    height: 56px;
+    width: 32%;
+    padding: 18px 40px;
+}
+
+@media (max-width: 1100px) {
+    .header {
+        min-width: 100%;
+    }
+    .but_wrap div {
+        /*height: 56px;*/
+        background: var(--color-yellow);
+        width: 48%;
+    }
+    .but_wrap button {
+        /*height: 56px;*/
+        width: 48%;
+        padding: 18px 40px;
+    }
+    .headerDay {
+        /*width: 30px;*/
+        gap: 2px;
+    }
+
+    .task {
+        gap: 2px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .wrapper {
+        padding-top: 10px;
+        border-radius: 16px;
+    }
+
+    .wrapper::after {
+        top: -11px;
+        left: -10px;
+        right: -10px;
+        bottom: 10px;
+        border-radius: 20px;
+    }
+
+    .head {
+        margin-bottom: 10px;
+    }
+
+    .selectMonth {
+        max-width: 150px;
+        font-size: 12px;
+    }
+
+    .button:hover {
+        box-shadow: none;
+    }
+
+    .scrollWrap {
+        height: 300px;
+    }
+
+    .header {
+        gap: 3px;
+        margin-bottom: 8px;
+        grid-template-columns: repeat(7, calc(100% / 7 - (20px / 7)));
+    }
+
+    .headerDay {
+        height: auto;
+        background-color: transparent;
+        gap: 2px;
+    }
+
+    .headerDay > span {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        height: 30px;
+        background-color: var(--color-accent);
+    }
+
+    .today > span {
+        background-color: var(--color-yellow);
+    }
+
+    .dayAdditional > span {
+        background-color: rgba(var(--color-accent_rgb), 0.8);
+    }
+
+    .body {
+        grid-template-columns: repeat(7, calc(100% / 7 - (20px / 7)));
+        gap: 3px;
+    }
+
+    .col {
+        gap: 2px;
+    }
+
+    .task {
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .taskHead {
+        display: flex;
+        align-items: flex-start;
+        gap: 2px;
+        margin-bottom: 5px;
+    }
+
+    .taskTitle {
+        font-size: 11px;
+    }
+
+    .edit .taskTitle {
+        max-width: calc(100% - 24px);
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    .time {
+        font-weight: 500;
+        font-size: 11px;
+        margin-left: 0;
+    }
+    .but_wrap div {
+        width: 100%;
+        height: 35px;
+    }
+    .but_wrap button {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .but_wrap div {
+        width: 100%;
+        height: 35px;
+    }
+    .but_wrap button {
+        display: none;
+    }
+}
