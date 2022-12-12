@@ -1,6 +1,6 @@
 import { createDate } from "./createDate"
 
-export const formateDate = (date, format = 'DD.MM.YYYY') => {
+export const formateDate = (date:any, format = 'DD.MM.YYYY') => {
   const d = createDate({ date })
   return format
     .replace(/\bYYYY\b/, d.year.toString())

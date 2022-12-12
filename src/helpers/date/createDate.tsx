@@ -15,7 +15,7 @@ const genitive = [
   'декабря',
 ]
 
-export const createDate = (params) => {
+export const createDate = (params:any) => {
   const locale = params?.locale ?? 'default'
 
   const d = params?.date ?? new Date()

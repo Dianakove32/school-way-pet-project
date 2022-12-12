@@ -1,1 +1,1 @@
-export const compareDates = (date1, date2) => Math.floor((date1?.getTime() - date2?.getTime()) / 1000 / 60 / 60 / 24)
+export const compareDates = (date1:any, date2:any) => Math.floor((date1?.getTime() - date2?.getTime()) / 1000 / 60 / 60 / 24)

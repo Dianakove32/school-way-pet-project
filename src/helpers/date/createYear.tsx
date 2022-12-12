@@ -1,18 +1,18 @@
 import { createDate } from "./createDate"
 import { createMonth } from "./createMonth"
 
-export const createYear = (params) => {
+export const createYear = (params:any) => {
   const locale = params?.locale ?? 'default'
 
   const monthCount = 12
-  const today = createDate()
+  const today = createDate('default')//????
 
   const year = params?.year ?? today.year
   const monthNumber = params?.monthNumber ?? today.monthNumber
 
   const month = createMonth({ date: new Date(year, monthNumber - 1), locale })
 
-  const getMonthDays = (monthIndex) => createMonth({ date: new Date(year, monthIndex), locale }).createMonthDays()
+  const getMonthDays = (monthIndex:any) => createMonth({ date: new Date(year, monthIndex), locale }).createMonthDays()
 
   const createYearMonthes = () => {
     const monthes = []

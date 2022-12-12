@@ -3,6 +3,7 @@ import PageLayout from "../../src/components/common/Layouts/PagesLayout";
 
 
 const Messages = () => {
+  // @ts-ignore
   return (
     <PageLayout title={'Сообщения'} className={'diary-layout'}>
       <div className='friends-list'>
@@ -11,7 +12,7 @@ const Messages = () => {
       <span className='cloud'></span>
       <div className='messages-container'>
         {
-          friendList.map(el=> <div key={el.id} className='messages-item'>
+          friendList.map((el: any)=> <div key={el.id} className='messages-item'>
             <div className={el.class}></div>
             <div className='messages-content'>
               <div className='messages-name'>{el.name}</div>
@@ -19,7 +20,7 @@ const Messages = () => {
             </div>
             <div className='time-content'>
               <div className='messages-time'>{el.time}</div>
-              <div className={el.count ? 'messages-count' : null}>{el.count}</div>
+              {/*<div className={el.count ? 'messages-count' : null}>{el.count}</div>*/}
             </div>
           </div>)
         }
@@ -78,8 +79,7 @@ const Messages = () => {
       .messages-name{
       font-weight: 400;
       font-size: 16px;
-      line-height: 18px;  
-      text-align: center;  
+      line-height: 18px;   
       color: #A18CF3;
       text-align: left;
       margin-bottom: 4px;

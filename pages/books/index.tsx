@@ -31,7 +31,7 @@ const Books = () => {
           <div className='title-common' onClick={() => changeTab('Books')}> Смотреть все</div>
         </div>
           <div className={'books-cont'}>
-        {booksArr.map(el=> <div className={'books-item'}>
+        {booksArr.map(el=> <div key={el.name} className={'books-item'}>
           <img src={el.img}/>
           </div>
 
@@ -43,7 +43,7 @@ const Books = () => {
           <div className='title-common' onClick={() => changeTab('Articles')}> Смотреть все</div>
         </div>
           <div className={'books-cont'}>
-        {articlesArr.map(el=> <div className={'articles-item'}>
+        {articlesArr.map(el=> <div key={el.title} className={'articles-item'}>
           <div className='articles-title'>{el.title}</div>
           <div className='articles-text'>{el.text}</div>
           <div className='articles-time'>{el.time}</div>
@@ -56,7 +56,7 @@ const Books = () => {
           <div className='title-common' onClick={()=>changeTab('Video')}> Смотреть все</div>
         </div>
         <div className={'books-cont'}>
-            {studyArr.map(el=> <div className={'books-item'}>
+            {studyArr.map(el=> <div key={el.name} className={'books-item'}>
                 <img src={el.img}/>
               </div>
             )}
