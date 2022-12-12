@@ -65,6 +65,7 @@ export default function Menu() {
         .wrapper-menu {
           background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%);
           padding: 16px 25px;
+          height: 100vh;
         }
         .header-menu {
           display: flex;

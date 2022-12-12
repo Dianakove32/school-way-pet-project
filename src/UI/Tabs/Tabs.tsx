@@ -89,7 +89,7 @@ const Tabs = ({ options, onClick, defaultValue = options[0].value, value, classN
       align-items: center;
       width: 90px;
       height: 28px;
-      padding: 7px 14px; 
+      padding: 7px 13px; 
       cursor: pointer;
       margin: 0;
       }

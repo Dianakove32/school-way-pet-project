@@ -155,7 +155,7 @@ const Week = ({listData, type}:any) => {
               onClick={() => onSetWeekNumber("left")}
               className={cn(s.btn, s.headerBtn)}
             >
-              <div>&#706;</div>
+              {/*<div>&#706;</div>*/}
             </button>
             {week.map((day) => {
               const isAdditional =
@@ -178,7 +178,7 @@ const Week = ({listData, type}:any) => {
               className={cn(s.btn, s.headerBtn)}
             >
 
-              <div>&#707;</div>
+              {/*<div>&#707;</div>*/}
             </button>
           </div>
           </div>
