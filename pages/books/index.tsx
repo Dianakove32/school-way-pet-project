@@ -67,7 +67,7 @@ const Books = () => {
       <style jsx>{`
         .content{
         margin-top: 44px;
-        height: 600px;
+        height: 568px;
         overflow-y: auto;
         padding-right: 3px;
         }

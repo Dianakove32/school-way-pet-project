@@ -5,6 +5,8 @@ import Breadcrumbs from "../../../src/components/Breadcrumbs/Breadcrumbs";
 import {arrDetailScore} from '../../../src/components/MockDada/diaryData'
 import s from '../../../styles/Score.module.css'
 import {arrScore1} from "../../../src/components/MockDada/diaryData";
+import Week from "../../calendar/Week";
+import cn from "classnames";
 
 
 const ScoreBySubject = () => {
@@ -14,9 +16,10 @@ const ScoreBySubject = () => {
     <PageLayout title={"Оценки"} className={'diaryScore'}>
     <div className={s.navBlock}>
     <Breadcrumbs link={'/diary/score'} title={sbg?.subject}/>
-      <div>Месяц</div>
+      {/*заменить на вертикальный календарь*/}
+      <Week ензу={'month'}/>
     </div>
-      <div className={s.scoreContainer}>
+      <div className={cn(s.scoreContainer, 'customScroll')}>
       {
         arrDetailScore.map((el: any)=> <div key={el.id} className={el.comment ? s.scoreColored : s.scoreDetailItem}>
           <div className={s.scoreData}>{el.data}</div>

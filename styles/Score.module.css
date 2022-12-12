@@ -2,9 +2,11 @@
     background: #FFFFFF;
     border-radius: 45px 45px 0px 0px;
     padding: 30px 10px 0px 10px;
-    height: 100vh;
-    height: 608px;
+     height: 492px;
     overflow-y: auto;
+}
+.scoreContainer.main{
+   height: 542px;
 }
 .scoreItem{
     display: flex;

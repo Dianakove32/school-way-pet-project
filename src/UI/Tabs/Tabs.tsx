@@ -73,7 +73,7 @@ const Tabs = ({ options, onClick, defaultValue = options[0].value, value, classN
       background: linear-gradient(0deg, #FEC32A 19.35%, #FFFBF1 151%);
       box-shadow: 0px 6px 17px rgba(67, 49, 136, 0.12);
       border-radius: 32px;
-      }  
+      }
       .quoter-active{
       background: linear-gradient(357.82deg, #FB6DFF 13.77%, #FEEDFF 189.26%);
       box-shadow: 0px 4px 4px rgba(83, 17, 84, 0.2);

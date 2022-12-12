@@ -20,7 +20,7 @@ const Messages = () => {
             </div>
             <div className='time-content'>
               <div className='messages-time'>{el.time}</div>
-              {/*<div className={el.count ? 'messages-count' : null}>{el.count}</div>*/}
+              <div className={el.count ? 'messages-count' : undefined}>{el.count}</div>
             </div>
           </div>)
         }

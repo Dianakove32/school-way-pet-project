@@ -73,7 +73,7 @@ const calendar = [
   },
 ];
 
-const Week = ({listData, type}:any) => {
+const Week = ({listData, type=''}:any) => {
   const [d] = React.useState(new Date());
   const { state, functions } = useCalendar({
     selectedDate: d,
@@ -157,7 +157,7 @@ const Week = ({listData, type}:any) => {
             >
               {/*<div>&#706;</div>*/}
             </button>
-            {week.map((day) => {
+            {type !== 'month' && week.map((day) => {
               const isAdditional =
                 day.monthIndex !== state.selectedMonth.monthIndex;
               const className = cn(

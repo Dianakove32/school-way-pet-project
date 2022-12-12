@@ -5,6 +5,7 @@ import Tabs from "../../../src/UI/Tabs/Tabs";
 import s from '../../../styles/Score.module.css'
 import Link from "next/link";
 import {arrScore1, arrScore2, arrScore3, arrScore4} from "../../../src/components/MockDada/diaryData";
+import cn from "classnames";
 
 const Score = () => {
   const [tab, setTab] = useState('arrScore1')
@@ -32,7 +33,7 @@ const Score = () => {
       />
 
       </div>
-      <div className={s.scoreContainer}>
+      <div className={cn(s.scoreContainer,s.main, 'customScroll')}>
         {
           arrScor?.map((el: any)=> <div key={el.id} className={s.scoreItem}>
             <div className={s.scoreSubject}>{el.subject}</div>
