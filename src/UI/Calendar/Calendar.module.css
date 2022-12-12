@@ -72,7 +72,8 @@
 
 .modeDays {
     grid-template-columns: repeat(7, 1fr);
-    gap: 21px;
+    gap: 18px;
+    width: 364px;
 }
 
 .modeMonths {
