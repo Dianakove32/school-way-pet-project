@@ -9,11 +9,11 @@ import {arrScore1} from "../../../src/components/MockDada/diaryData";
 
 const ScoreBySubject = () => {
   const {query} = useRouter()
-  const sbg: any = arrScore1.find(el=>el.id === query.id)
+  const sbg: any = arrScore1?.find(el=>el.id === query.id)
   return (
     <PageLayout title={"Оценки"} className={'diaryScore'}>
     <div className={s.navBlock}>
-    <Breadcrumbs link={'/diary/score'} title={sbg.subject}/>
+    <Breadcrumbs link={'/diary/score'} title={sbg?.subject}/>
       <div>Месяц</div>
     </div>
       <div className={s.scoreContainer}>

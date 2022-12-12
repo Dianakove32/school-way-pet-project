@@ -18,7 +18,7 @@ const Homework = () => {
         {
           homeworkData1.map(el=><div key={el.subject} className={el.isChecked ? s.scheduleItemColored : s.scheduleItem}>
             <div className={s.border}>
-              <div className={s.scheduleSubject}>{el.subject}</div>
+              <div className={s.scheduleSubject}>{el?.subject}</div>
               <input type='checkbox' className='check' checked={el.isChecked}/>
               {/*<Checkbox*/}
               {/*           // hardValue={true}*/}

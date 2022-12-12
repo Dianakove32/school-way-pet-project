@@ -12,10 +12,10 @@ const Schedule = () => {
       <Week/>
       <div className={s.container}>
         {
-          schedualData1.map(el=><div key={el.subject} className={s.scheduleItem}>
+          schedualData1.map(el=><div key={el?.subject} className={s.scheduleItem}>
             <div className={s.border}>
-            <div className={s.scheduleSubject}>{el.subject}</div>
-            <div className={s.scheduleData}>{el.start} - {el.end}</div>
+            <div className={s.scheduleSubject}>{el?.subject}</div>
+            <div className={s.scheduleData}>{el?.start} - {el.end}</div>
             </div>
             <div className={s.border}>
             <div className={s.scheduleTeacher}>{el.teacher}</div>

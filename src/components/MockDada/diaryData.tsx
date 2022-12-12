@@ -1,4 +1,4 @@
-export const ringsData1 =[
+export const ringsData1: any[] =[
   {
     num: '1',
     start: '8:30',
@@ -35,7 +35,7 @@ export const ringsData1 =[
     end: "15:15"
   },
 ]
-export const ringsData2 =[
+export const ringsData2: any[] =[
   {
     num: '1',
     start: '12:30',
@@ -72,7 +72,7 @@ export const ringsData2 =[
     end: "19:15"
   },
 ]
-export const arrScore2=[
+export const arrScore2: any[]=[
   {
     subject:'Английский язык',
     score:'8',
@@ -118,7 +118,7 @@ export const arrScore2=[
   },
 ]
 
-export const arrScore1=[
+export const arrScore1: any[]=[
   {
     subject:'Английский язык',
     score:'8,6',
@@ -229,7 +229,7 @@ export const arrDetailScore: any[] =[
   },
 ]
 
-export const schedualData1 =[
+export const schedualData1: any[] =[
   {
     subject: 'Химия',
     teacher:'Самусева Татьяна Николаевна',
@@ -280,7 +280,7 @@ export const schedualData1 =[
     class:'2-13'
   },
 ]
-export const homeworkData1 =[
+export const homeworkData1: any[] =[
   {
     subject: 'Химия',
     task:'#35, №125-134',

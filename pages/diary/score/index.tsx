@@ -34,7 +34,7 @@ const Score = () => {
       </div>
       <div className={s.scoreContainer}>
         {
-          arrScor.map((el: any)=> <div key={el.id} className={s.scoreItem}>
+          arrScor?.map((el: any)=> <div key={el.id} className={s.scoreItem}>
             <div className={s.scoreSubject}>{el.subject}</div>
             <div className={s.scoreScore}>{el.score}</div>
             <Link href={`/diary/score/${el.id}`} className={s.scoreUnic}>
