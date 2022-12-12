@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import PageLayout from "../../src/components/common/Layouts/PagesLayout";
 import Tabs from "../../src/UI/Tabs/Tabs";
 import Image from "next/image";
+import cn from "classnames";
 
 const Books = () => {
   const [tab, setTab] = useState('')
@@ -25,12 +26,12 @@ const Books = () => {
             setTab(e);
           }}
         />
-      <div className={'content'}>
+      <div className={cn('content','customScroll')}>
         {(tab=== '' || tab === 'Books') && <> <div className='title-wrapper'>
           <div className='title-name'>Книги</div>
           <div className='title-common' onClick={() => changeTab('Books')}> Смотреть все</div>
         </div>
-          <div className={'books-cont'}>
+          <div className={cn('books-cont','customScroll')}>
         {booksArr.map(el=> <div key={el.name} className={'books-item'}>
           <img src={el.img}/>
           </div>
@@ -42,7 +43,7 @@ const Books = () => {
           <div className='title-name'>Статьи</div>
           <div className='title-common' onClick={() => changeTab('Articles')}> Смотреть все</div>
         </div>
-          <div className={'books-cont'}>
+          <div className={cn('books-cont','customScroll')}>
         {articlesArr.map(el=> <div key={el.title} className={'articles-item'}>
           <div className='articles-title'>{el.title}</div>
           <div className='articles-text'>{el.text}</div>
@@ -55,7 +56,7 @@ const Books = () => {
           <div className='title-name'>Учебники</div>
           <div className='title-common' onClick={()=>changeTab('Video')}> Смотреть все</div>
         </div>
-        <div className={'books-cont'}>
+        <div className={cn('books-cont','customScroll')}>
             {studyArr.map(el=> <div key={el.name} className={'books-item'}>
                 <img src={el.img}/>
               </div>
@@ -68,6 +69,7 @@ const Books = () => {
         margin-top: 44px;
         height: 600px;
         overflow-y: auto;
+        padding-right: 3px;
         }
         .books-cont{
         display: flex;
@@ -106,7 +108,7 @@ const Books = () => {
         background: #FFFFFF;
         box-shadow: 0px 6px 17px rgba(67, 49, 136, 0.12);
         border-radius: 24px;
-        width: 175px;
+        width: 170px;
         height: 98px;
         padding: 5px;
         margin-bottom: 12px;

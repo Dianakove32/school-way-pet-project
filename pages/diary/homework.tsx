@@ -4,6 +4,7 @@ import Breadcrumbs from "../../src/components/Breadcrumbs/Breadcrumbs";
 import {homeworkData1 } from "../../src/components/MockDada/diaryData";
 import s from "../../styles/Schedule.module.css";
 import Week from "../calendar/Week";
+import cn from "classnames";
 
 const Homework = () => {
   const [isChecked, setIsChecked] = useState(false)
@@ -14,7 +15,7 @@ const Homework = () => {
     <PageLayout title={'Домашнее задание'} className={'diarySchedule'}>
       <Breadcrumbs title={"Домашнее задание"} link={'/diary'}/>
       <Week listData={homeworkData1} type={'homework'}/>
-      <div className={s.container}>
+      <div className={cn(s.container, 'customScroll')}>
         {
           homeworkData1.map(el=><div key={el.subject} className={el.isChecked ? s.scheduleItemColored : s.scheduleItem}>
             <div className={s.border}>

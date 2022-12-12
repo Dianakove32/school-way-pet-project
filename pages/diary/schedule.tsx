@@ -4,13 +4,14 @@ import Breadcrumbs from "../../src/components/Breadcrumbs/Breadcrumbs";
 import {schedualData1} from "../../src/components/MockDada/diaryData";
 import s from "../../styles/Schedule.module.css";
 import Week from "../calendar/Week";
+import cn from "classnames";
 
 const Schedule = () => {
   return (
     <PageLayout title={"Расписание занятий"} className={'diarySchedule'}>
       <Breadcrumbs title={"Расписание занятий"} link={'/diary'}/>
       <Week/>
-      <div className={s.container}>
+      <div className={cn(s.container, 'customScroll')}>
         {
           schedualData1.map(el=><div key={el?.subject} className={s.scheduleItem}>
             <div className={s.border}>

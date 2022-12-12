@@ -1,6 +1,7 @@
 import React from 'react';
 import Calendar from "../../src/UI/Calendar/Calendar";
 import s from "../../styles/Schedule.module.css";
+import cn from "classnames";
 
 
 const arrData=[
@@ -35,16 +36,17 @@ const Month = () => {
       <div className={ 'pict'}></div>
       <Calendar dataList={arrData}/>
       </div>
-      <div className={s.calendarContainer}>
+      <div className={cn(s.calendarContainer, 'customScroll')}>
         {
           arrData.map((el, index: any)=> <div key={el.id} className={s.calendarDetailItem}>
             <div className={s.calendarTime}>{el.time}</div>
-            <div className={index%2 == 0 ? s.calendarComment : index%3 == 0 ? s.calendarCommentGreen : s.calendarCommentBlue}>{el.comment}</div>
+            <div className={cn((index%2 == 0 ? s.calendarComment : index%3 == 0 ? s.calendarCommentGreen : s.calendarCommentBlue), 'customScroll')}>{el.comment}</div>
           </div>)
         }</div>
       <style jsx>{`
       .month-container{
       position: relative;
+      width: 385px;
       }
       .cont-tabs{
        margin-bottom: 50px;

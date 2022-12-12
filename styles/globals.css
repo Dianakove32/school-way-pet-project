@@ -25,6 +25,23 @@ a {
   box-shadow: 4px 4px 65px 10px rgba(154, 153, 162, 0.32);
   border-radius: 45px;
 }
+
+.customScroll::-webkit-scrollbar-track {
+  border-radius: 7px;
+  background-color: #E6ECF2FF;
+
+}
+
+.customScroll::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: #A18CF3;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
