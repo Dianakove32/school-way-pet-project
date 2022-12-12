@@ -57,22 +57,30 @@ const PageLayout = ({children, title, className}: any) => {
         .diary-layout{
          background: linear-gradient(170.91deg, #EBE4FF 3.34%, #FFF2EE 37.13%, #FFFFFF 104.14%); 
          height: 844px;
+         border-radius: 45px;
+         box-shadow: 4px 4px 65px 10px rgba(154, 153, 162, 0.32);
         }
         .diaryScore{
         background: linear-gradient(10.25deg, #D9CCFF 8.59%, #FFF1ED 62.03%, #FFFFFF 79.64%); 
         height: 844px;
+         border-radius: 45px;
+         box-shadow: 4px 4px 65px 10px rgba(154, 153, 162, 0.32);
         }
         .diarySchedule{
         background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%) ;
         height: 844px;
+        border-radius: 45px;
+        box-shadow: 4px 4px 65px 10px rgba(154, 153, 162, 0.32);
         }
         .diaryScore section{
         padding-left: 0px;
-        padding-right: 0px;
+        padding-right: 0px; 
         }
         .calendar-layout{
         background: linear-gradient(170.91deg, #EBE4FF 3.34%, #FFF2EE 37.13%, #FFFFFF 104.14%);
         height: 844px;
+        border-radius: 45px;
+        box-shadow: 4px 4px 65px 10px rgba(154, 153, 162, 0.32);
         }
         .calendar-layout section{
         padding-left: 0px;

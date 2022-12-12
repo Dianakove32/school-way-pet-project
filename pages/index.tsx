@@ -64,8 +64,7 @@ export default function Menu() {
       <style jsx>{`
         .wrapper-menu {
           background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%);
-          padding: 16px 25px;
-          height: 100vh;
+          padding: 16px 25px; 
         }
         .header-menu {
           display: flex;

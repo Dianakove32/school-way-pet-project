@@ -55,6 +55,7 @@ const BottomMenu = () => {
       position: absolute;
       bottom: 0;
       width: 100%;
+      border-radius:0px 0px 44px 44px;
       }
       .menu-container li{
       list-style-type: none;  

@@ -32,12 +32,14 @@ const MainLayout = ({children,className}:any) => {
       background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%) no-repeat;
       height: 844px;
       border-radius: 20px;
+      border-radius: 45px;
       }
       .error-page-wrapper{ 
       text-align: center;
       padding-top: 40%;
       background: linear-gradient(14.59deg, #D9CCFF 1.28%, #FFF1ED 28.09%, #FFFFFF 52.12%) no-repeat;
       height: 844px;
+      border-radius: 45px;
       }
        //section{ 
        // display:flex;
